@@ -1,0 +1,203 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+    
+    
+}
+
+.master {
+    width: 90%;
+	max-width: 1200px;
+	margin: auto;
+	padding: 40px 0;
+}
+
+.nav {
+    background-color: #FFB400;
+    height: 70px;
+    align-content: center;
+    justify-content: space-evenly;
+    display: flex;    
+}
+
+.nav a {
+    text-decoration: none;
+    color: black;
+    padding: 24px;    
+    font-weight: 700;
+}
+
+.nav a :hover {
+    color: #767676;
+}
+
+.slide {
+
+    display: grid;
+    grid-template-columns: 1fr;
+    background-image: url(../img/slide.png);
+    background-position: center;
+    padding-top: 50px;
+    padding-left: 50px;
+    display: flex;
+}
+
+.slide h2{
+    padding-top: 200px;
+    padding-bottom: 24px;    
+}
+
+.slide p{
+    width: 400px;
+    padding-bottom: 24px;    
+}
+
+.slide button{
+    background-color: #FFB400;
+    border-radius: 2px;
+    font-weight: 700;
+    padding: 5px;   
+
+}
+
+.habilidades{
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.cards {
+   /* ;    ;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row; */
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);    
+    justify-content: center;
+    padding-top: 50px
+}
+
+.card {
+    width: 310px;
+    height: 230px;
+    align-content: center;
+    text-align: center;
+}
+
+.card p {
+    padding-top: 20px;
+    font-weight: 500;
+    color: #767676;
+
+}
+
+.card h4 {
+    padding-top: 20px;
+    font-weight: 700;
+    
+}
+
+.habilidades h4{
+    color: #FFB400;;
+}
+
+.habilidades p{
+    padding-top: 20px;
+}
+
+.portafolio {
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.portafolio p {
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+.works {
+    display: flex;
+    justify-content: space-between;
+
+    display: grid;
+    justify-content: center;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 10px;
+}
+
+
+.contacto {
+    padding-bottom: 50px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.contacto h2 {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.contacto label {
+    
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+footer {
+    background-color: #FFB400;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 824px) {
+
+	.works {
+		display: grid;
+	    grid-template-columns: repeat(2, 1fr);
+	    gap: 15px;
+	}
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+	
+}
+
+@media screen and (max-width: 480px) {
+
+    .slide{
+        visibility: hidden;
+        display: none;
+    }
+
+    .cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+	.works {
+		display: grid;
+	    grid-template-columns: repeat(1, 1fr);
+	    gap: 10px;        
+	}
+	
+}
